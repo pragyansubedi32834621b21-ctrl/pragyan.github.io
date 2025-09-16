@@ -4,52 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Mundo dos Telemóveis</title>
+    <!-- Google Font for a modern style -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Global styles */
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset some default styles */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            animation: fadeIn 2s ease-in-out;
-        }
-        header {
-            background-color: #2a9d8f;
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-            animation: fadeIn 3s ease-in-out;
-        }
-        header h1 {
-            margin: 0;
-        }
-        main {
-            padding: 20px;
-        }
-        h1, h2 {
-            color: #2a9d8f;
-        }
-        .section {
-            margin-bottom: 30px;
-            animation: slideUp 1s ease-in-out;
-        }
-        .section p {
-            line-height: 1.6;
+            box-sizing: border-box;
         }
 
-        /* Image styling */
+        /* Global styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        header {
+            background-color: #1E3A8A;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        .section h2 {
+            color: #1E3A8A;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .section p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
         .image {
             width: 100%;
-            max-width: 600px;
+            max-width: 650px;
             display: block;
             margin: 20px auto;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease-in-out;
         }
+
         .image:hover {
             transform: scale(1.05);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #1E3A8A;
+            color: white;
+            padding: 12px 24px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #3b82f6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1E3A8A;
+            color: white;
+            margin-top: 40px;
         }
 
         /* Animation */
@@ -57,64 +111,43 @@
             0% { opacity: 0; }
             100% { opacity: 1; }
         }
+
         @keyframes slideUp {
             0% { opacity: 0; transform: translateY(20px); }
             100% { opacity: 1; transform: translateY(0); }
         }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #264653;
-            color: white;
-            margin-top: 20px;
-        }
-
-        /* Button Style */
-        .btn {
-            background-color: #2a9d8f;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #1f7f75;
-        }
     </style>
 </head>
 <body>
 
 <header>
     <h1>O Mundo dos Telemóveis</h1>
-    <p>Explorando a tecnologia por trás dos nossos dispositivos móveis</p>
+    <p>Explorando a tecnologia dos nossos dispositivos móveis e sua evolução ao longo dos anos.</p>
 </header>
 
 <main>
     <section class="section">
         <h2>O que é um Telemóvel?</h2>
-        <p>Um telemóvel é um dispositivo eletrônico portátil utilizado para realizar chamadas telefónicas, enviar mensagens de texto, navegar na internet e executar várias outras funções. Os telemóveis evoluíram ao longo dos anos e agora incluem câmeras, sistemas de GPS, jogos e muitas outras funcionalidades.</p>
-        <img src="https://via.placeholder.com/600x400?text=Imagem+de+telem%C3%B3vel" alt="Imagem de telemóvel" class="image">
+        <p>O telemóvel é um dispositivo eletrônico compacto que tem revolucionado a forma como nos comunicamos, acessamos informações e interagimos com o mundo digital. Inicialmente utilizado apenas para chamadas, hoje ele é um centro de entretenimento, trabalho e conectividade.</p>
+        <img src="https://via.placeholder.com/650x400?text=Imagem+de+telem%C3%B3vel" alt="Imagem de telemóvel" class="image">
     </section>
 
     <section class="section">
         <h2>História dos Telemóveis</h2>
-        <p>O primeiro telemóvel foi criado por Martin Cooper em 1973, quando ele fez a primeira chamada a partir de um celular portátil. Desde então, os telemóveis evoluíram de dispositivos simples para potentes smartphones com capacidades incríveis. Atualmente, as empresas mais conhecidas como Apple, Samsung e Huawei dominam o mercado mundial de smartphones.</p>
-        <img src="https://via.placeholder.com/600x400?text=Imagem+hist%C3%B3rica+de+telem%C3%B3vel" alt="Imagem histórica de telemóvel" class="image">
+        <p>Em 1973, Martin Cooper fez a primeira chamada pública usando o primeiro telefone móvel, o Motorola DynaTAC. Com o tempo, os telefones celulares evoluíram para os smartphones modernos, com telas sensíveis ao toque, câmeras de alta definição, e capacidade de conectar-se à internet.</p>
+        <img src="https://via.placeholder.com/650x400?text=Imagem+hist%C3%B3rica+de+telem%C3%B3vel" alt="Imagem histórica de telemóvel" class="image">
     </section>
 
     <section class="section">
         <h2>Tipos de Telemóveis</h2>
-        <p>Existem dois tipos principais de telemóveis no mercado: os modelos mais simples e os smartphones. Os smartphones são dispositivos mais avançados que oferecem uma grande variedade de funcionalidades, como sistemas operacionais completos (Android, iOS), aplicativos e conectividade com redes sociais e plataformas de mídia.</p>
-        <img src="https://via.placeholder.com/600x400?text=Smartphone+moderno" alt="Imagem de smartphone moderno" class="image">
+        <p>Atualmente, existem diversos tipos de telemóveis, sendo os mais comuns os smartphones. Eles são projetados para oferecer múltiplas funcionalidades como navegação na web, câmeras avançadas, aplicativos para redes sociais e muito mais. A diferença entre um smartphone e um telemóvel tradicional está no poder de processamento e nas capacidades extras de interação.</p>
+        <img src="https://via.placeholder.com/650x400?text=Smartphone+moderno" alt="Smartphone moderno" class="image">
     </section>
 
     <section class="section">
         <h2>Sobre o Autor</h2>
-        <p>Este site foi criado por Pragyan Subedi, aluno da turma 9B da Escola Manuel de Maia. O objetivo deste projeto é explorar a evolução e a importância dos telemóveis na sociedade moderna. Espero que este site tenha sido útil e informativo!</p>
+        <p>Este site foi criado por Pragyan Subedi, aluno da turma 9B da Escola Manuel de Maia. Meu objetivo é explorar e apresentar a evolução dos telemóveis, uma tecnologia que moldou o nosso dia a dia de maneira profunda e contínua.</p>
         <a href="mailto:pragyan.subedi@email.com" class="btn">Contate-me</a>
     </section>
 </main>
